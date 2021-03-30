@@ -14,3 +14,16 @@ public final class MagicSDK {
     }
 
 }
+
+extension MagicSDK: MagicSDKProtocol {
+
+    public func cards(
+        completion: @escaping ((Result<CardResponse, NBAPIError>) -> Void)
+    ) {
+        network.request(
+            CardService.cards,
+            responseType: CardResponse.self,
+            completion: completion
+        )
+    }
+}
