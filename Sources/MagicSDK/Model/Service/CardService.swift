@@ -26,7 +26,7 @@ extension CardService: NBServiceProtocol {
     }
 
     public var queryParameters: [String : String]? {
-        return ["type": "leviathan"]
+        return ["q": "t:leviathan"]
     }
 
     public var needsToken: Bool {
