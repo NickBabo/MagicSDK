@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "NBNetwork",
+        "repositoryURL": "https://github.com/NickBabo/NBNetwork.git",
+        "state": {
+          "branch": null,
+          "revision": "df8a64e9215d65e4a93b026766266a2e32003618",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
