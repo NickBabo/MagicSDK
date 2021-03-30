@@ -18,10 +18,11 @@ public final class MagicSDK {
 extension MagicSDK: MagicSDKProtocol {
 
     public func cards(
+        parameters: [SearchParameter],
         completion: @escaping ((Result<CardResponse, NBAPIError>) -> Void)
     ) {
         network.request(
-            CardService.cards,
+            CardService.cards(parameters),
             responseType: CardResponse.self,
             completion: completion
         )

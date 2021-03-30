@@ -2,5 +2,8 @@ import Foundation
 import NBNetwork
 
 public protocol MagicSDKProtocol {
-    func cards(completion: @escaping ((Result<CardResponse, NBAPIError>) -> Void))
+    func cards(
+        parameters: [SearchParameter],
+        completion: @escaping ((Result<CardResponse, NBAPIError>) -> Void)
+    )
 }
