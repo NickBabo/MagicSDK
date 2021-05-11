@@ -7,11 +7,21 @@ public struct Card: Decodable {
 }
 
 public enum GameMode: String, Decodable {
+    case gladiator
     case duel
     case penny
+    case pauper
     case modern
     case commander
     case legacy
+    case vintage
+    case oldschool
+    case standard
+    case brawl
+    case premodern
+    case future
+    case historic
+    case pioneer
 }
 
 public enum Legality: String, Decodable {
