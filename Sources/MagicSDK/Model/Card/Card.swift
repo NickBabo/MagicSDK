@@ -2,7 +2,7 @@ import Foundation
 
 public struct Card: Decodable {
     public var name: String
-    public var legalities: [GameMode: Legality]
+    public var legalities: [GameMode: String]
     public var set: String
 }
 
